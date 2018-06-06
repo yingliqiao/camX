@@ -1,4 +1,4 @@
-## Welcome to cam X Pages
+## Welcome to cam X
 
 [cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e09d) is an iOS project written in Swift that I built for [ONVIF Open Source Spotlight Challenge](https://onvif-challenge.bemyapp.com/)
 
@@ -21,3 +21,7 @@ cam X uses FFmpeg library to decode and stream live video from cameras use ONVIF
 ## User Guide
 
 See [cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e09d) page for detailed slides and screenshots.
+
+
+## Screenshot
+![Truck Alarm](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/mjkgig9dn8mymbomqccy.png)
