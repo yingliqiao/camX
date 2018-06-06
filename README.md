@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome to cam X Pages
 
-You can use the [editor on GitHub](https://github.com/yingliqiao/camX/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[cam X](https://guides.github.com/features/mastering-markdown/) is an iOS project written in Swift that I built for [ONVIF Open Source Spotlight Challenge](https://onvif-challenge.bemyapp.com/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It's a proof of concept project to demonstrate how Deep Learning, IPFS and Blockchain can be applied together in practice. 
 
-### Markdown
+cam X uses FFmpeg library to decode and stream live video from cameras use ONVIF protocol, HTTP, RTSP or iOS device build-in cameras. It equips with Tiny Yolo and Yolo 2 deep learning object detection models as video analytics engine on camera. Users are given options to pick any object class to detect or raise alarm. Users manually pick alarm to save to IPFS. iOS device UUID used as key to store alarm hash to Ethereum Rinkeby Test Network via a simple lookup smart contract.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Installation
 
-```markdown
-Syntax highlighted code block
+1. Run [FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script) to build FFmpeg library for iOS
 
-# Header 1
-## Header 2
-### Header 3
+2. Run 'pod update' in root directory to install [ONVIFCamera](https://github.com/rvi/ONVIFCamera) library and web3swift(https://github.com/BANKEX/web3swift) library.
 
-- Bulleted
-- List
+3. Install Carthage and run 'carthage update --platform iOS' to install [swift-ipfs-api](https://github.com/ipfs/swift-ipfs-api)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yingliqiao/camX/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+4. Then you can build the project in Xcode. You need minimum iOS 11.0 to run the app.
