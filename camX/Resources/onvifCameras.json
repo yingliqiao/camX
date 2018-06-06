@@ -1,0 +1,30 @@
+[
+  {
+    "password": "Uniview2018",
+    "type": "ONVIF",
+    "name": "UNIVIEW HIC6622HX22-5CIR-U",
+    "ip": "61.164.52.166:88",
+    "user": "admin"
+  },
+  {
+    "password": "Xbks8tr8vT",
+    "type": "ONVIF",
+    "name": "BOSCH Dinion IP starlight 7000 HD",
+    "ip": "193.159.244.134",
+    "user": "service"
+  },
+  {
+    "password": "Xbks8tr8vT",
+    "type": "ONVIF",
+    "name": "BOSCH AUTODOME IP 7000",
+    "ip": "193.159.244.132",
+    "user": "service"
+  },
+  {
+    "password": "Onv!f2018",
+    "type": "ONVIF",
+    "name": "AXIS Q3505 Mk II",
+    "ip": "195.60.68.239",
+    "user": "operator"
+  }
+]

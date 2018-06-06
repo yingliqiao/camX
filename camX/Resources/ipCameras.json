@@ -1,0 +1,72 @@
+[
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Times Square Crossroads - NYC, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/4717.flv/chunklist_w1899111991.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Times Square Pedestrian Plaza, NYC, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/9974.flv/chunklist_w2122575647.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Statue of Liberty - NYC, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/statueoflibertyHD.flv/chunklist_w326452095.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Wrigley Field Cam - Chicago, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/13220.flv/chunklist_w1917340565.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Hollywood Blvd, LA, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/lacitytours1.flv/chunklist_w211806683.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Florida Marina - Fort Lauderdale, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/8891.flv/chunklist_w2084018047.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Key West, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/14287.flv/chunklist_w741857321.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Dusseldorf Airport - Dusseldorf, Germany",
+    "ip": "http://stream-5gw.1000eyes.de/cupertino/dus0600.stream/chunklist_w1549419115.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Pub - Dublin, Ireland",
+    "ip": "http://videos3.earthcam.com/fecnetwork/14320.flv/chunklist_w1663898088.m3u8",
+    "user": ""
+  },
+  {
+    "password": "",
+    "type": "IP",
+    "name": "Giraffe Cam Paddock - Greenville, US",
+    "ip": "http://videos3.earthcam.com/fecnetwork/4597.flv/chunklist_w1946135839.m3u8",
+    "user": ""
+  }
+]
