@@ -24,7 +24,7 @@ See [cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e
 Alternatively, I made demo videos on [network cameras](https://youtu.be/2qVB5_j4TOg) and [iPad Pro backward facing camera](https://youtu.be/FVj4Qnxq4k8)
 
 ## Screenshots
-![Video](https://drive.google.com/file/d/1l6uQN5IPR2fYX7im3axZ-8cWqMtUHzKI/view?usp=sharing)
-![Alarm](https://drive.google.com/file/d/1yib8AcmWAW7MMXPd-qM-4f_-K5InZarV/view?usp=sharing)
-![IPFS](https://drive.google.com/file/d/1ag8TNjCt5O4WmVbpHwc20OKsJ4YPKFE1/view?usp=sharing)
-![Transaction](https://drive.google.com/file/d/1fie1Kf5QdQYp-SgmUehSPeQ8qiF5TWGl/view?usp=sharing)
+![Video](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/z1xrhdjenoyht5locyf8.png)
+![Alarm](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/nus9pusqao4fvusfmuvu.png)
+![IPFS](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/wfrm11ysdyyxbd8tjgn9.png)
+![Transaction](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/v2nueabfkkauwa7rj0xp.png)
