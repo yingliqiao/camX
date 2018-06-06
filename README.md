@@ -1,6 +1,6 @@
 ## Welcome to cam X Pages
 
-[cam X](https://guides.github.com/features/mastering-markdown/) is an iOS project written in Swift that I built for [ONVIF Open Source Spotlight Challenge](https://onvif-challenge.bemyapp.com/)
+[cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e09d) is an iOS project written in Swift that I built for [ONVIF Open Source Spotlight Challenge](https://onvif-challenge.bemyapp.com/)
 
 It's a proof of concept project to demonstrate how Deep Learning, IPFS and Blockchain can be applied together in practice. 
 
@@ -10,8 +10,14 @@ cam X uses FFmpeg library to decode and stream live video from cameras use ONVIF
 
 1. Run [FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script) to build FFmpeg library for iOS
 
-2. Run 'pod update' in root directory to install [ONVIFCamera](https://github.com/rvi/ONVIFCamera) library and web3swift(https://github.com/BANKEX/web3swift) library.
+2. Run 'pod update' in root directory to install [ONVIFCamera](https://github.com/rvi/ONVIFCamera) library and [web3swift](https://github.com/BANKEX/web3swift) library.
 
 3. Install Carthage and run 'carthage update --platform iOS' to install [swift-ipfs-api](https://github.com/ipfs/swift-ipfs-api)
 
-4. Then you can build the project in Xcode. You need minimum iOS 11.0 to run the app.
+4. Run download.sh shell script to download pre-trained CoreML models: Tiny Yolo and Yolo 2.
+
+5. Then you can build the project in Xcode. You need minimum iOS 11.0 to run the app.
+
+## User Guide
+
+See [cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e09d) page for detailed slides and screenshots.
