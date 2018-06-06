@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7567AC9520A3F7F1000882D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567AC9420A3F7F1000882D6 /* AppDelegate.swift */; };
+		7567AC9C20A3F7F1000882D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7567AC9A20A3F7F1000882D6 /* Main.storyboard */; };
+		7567ACAB20A3F8A9000882D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7567ACA920A3F8A9000882D6 /* Images.xcassets */; };
+		7567ACBE20A3F94A000882D6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7567ACBB20A3F94A000882D6 /* libiconv.dylib */; };
+		7567ACBF20A3F94A000882D6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7567ACBC20A3F94A000882D6 /* libz.dylib */; };
+		7567ACC020A3F94A000882D6 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7567ACBD20A3F94A000882D6 /* libbz2.dylib */; };
+		7567ACC720A3FB21000882D6 /* FFmpegVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACC420A3FB20000882D6 /* FFmpegVideoPlayer.m */; };
+		7567ACCF20A403E3000882D6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACCA20A403E3000882D6 /* Config.swift */; };
+		7567ACD020A403E3000882D6 /* YOLO2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACCB20A403E3000882D6 /* YOLO2.swift */; };
+		7567ACD120A403E3000882D6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACCC20A403E3000882D6 /* Helpers.swift */; };
+		7567ACD220A403E3000882D6 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACCD20A403E3000882D6 /* BoundingBox.swift */; };
+		7567ACD320A403E3000882D6 /* yolo2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7567ACCE20A403E3000882D6 /* yolo2.mlmodel */; };
+		756FC6B120A688F70095BF0C /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6AB20A688F70095BF0C /* MobileViewController.swift */; };
+		756FC6B220A688F70095BF0C /* CameraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6AC20A688F70095BF0C /* CameraTableViewController.swift */; };
+		756FC6B320A688F70095BF0C /* ObjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6AD20A688F70095BF0C /* ObjectTableViewController.swift */; };
+		756FC6B420A688F70095BF0C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6AE20A688F70095BF0C /* VideoCapture.swift */; };
+		756FC6B520A688F70095BF0C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6AF20A688F70095BF0C /* Camera.swift */; };
+		756FC6B820A689450095BF0C /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC6B720A689450095BF0C /* StreamViewController.swift */; };
+		7596C7A420BA72AE000C0115 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7A320BA72AE000C0115 /* Alarm.swift */; };
+		7596C7A620BA739C000C0115 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7A520BA739C000C0115 /* AlarmManager.swift */; };
+		7596C7A820BA76F2000C0115 /* AlarmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7A720BA76F2000C0115 /* AlarmCollectionViewCell.swift */; };
+		7596C7AA20BBB06F000C0115 /* IPFSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7A920BBB06F000C0115 /* IPFSManager.swift */; };
+		7596C7AC20BBC0C4000C0115 /* BlockchainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7AB20BBC0C4000C0115 /* BlockchainViewController.swift */; };
+		7596C7AE20BC93B3000C0115 /* EthereumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7AD20BC93B3000C0115 /* EthereumManager.swift */; };
+		7596C7B220BCF89D000C0115 /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B120BCF89D000C0115 /* Notification+Name.swift */; };
+		7596C7B420BEF3C9000C0115 /* SettingEthereumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B320BEF3C9000C0115 /* SettingEthereumViewController.swift */; };
+		7596C7B620BEF3DD000C0115 /* SettingIPFSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B520BEF3DD000C0115 /* SettingIPFSViewController.swift */; };
+		7596C7B820BF308D000C0115 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B720BF308D000C0115 /* AboutViewController.swift */; };
+		7596C7BA20BF3EA9000C0115 /* selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7596C7B920BF3EA8000C0115 /* selfie.jpg */; };
+		75B381AF20B9892D001F3B76 /* VarInt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381A820B9892B001F3B76 /* VarInt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B020B9892D001F3B76 /* SwiftBase58.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381A920B9892C001F3B76 /* SwiftBase58.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B120B9892D001F3B76 /* SwiftMultiaddr.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B220B9892D001F3B76 /* SwiftIpfsApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B320B9892D001F3B76 /* SwiftMultihash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B420B9892D001F3B76 /* SwiftHex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AD20B9892C001F3B76 /* SwiftHex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B520B9892D001F3B76 /* SwiftGMP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AE20B9892C001F3B76 /* SwiftGMP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75B381B620B98962001F3B76 /* SwiftBase58.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A920B9892C001F3B76 /* SwiftBase58.framework */; };
+		75B381B720B98962001F3B76 /* SwiftGMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AE20B9892C001F3B76 /* SwiftGMP.framework */; };
+		75B381B820B98962001F3B76 /* SwiftHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AD20B9892C001F3B76 /* SwiftHex.framework */; };
+		75B381B920B98962001F3B76 /* SwiftIpfsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */; };
+		75B381BA20B98962001F3B76 /* SwiftMultiaddr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */; };
+		75B381BB20B98962001F3B76 /* SwiftMultihash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */; };
+		75B381BC20B98962001F3B76 /* VarInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A820B9892B001F3B76 /* VarInt.framework */; };
+		75B381BF20BA51FF001F3B76 /* onvifCameras.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B381BD20BA51FE001F3B76 /* onvifCameras.json */; };
+		75B381C020BA51FF001F3B76 /* ipCameras.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B381BE20BA51FE001F3B76 /* ipCameras.json */; };
+		75B381C320BA6A01001F3B76 /* AlarmCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B381C220BA6A01001F3B76 /* AlarmCollectionViewController.swift */; };
+		75F53C0820B51D0A009012DF /* EditCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F53C0720B51D0A009012DF /* EditCameraViewController.swift */; };
+		75F53C0F20B7676D009012DF /* SettingAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F53C0E20B7676D009012DF /* SettingAlarmViewController.swift */; };
+		75F53C1120B7A9C2009012DF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F53C1020B7A9C2009012DF /* logo.png */; };
+		75F8DFF320AA784000917C45 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8DFF220AA784000917C45 /* CameraManager.swift */; };
+		75F8E00220ABDA0200917C45 /* FFmpeg-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 75F8E00120ABDA0100917C45 /* FFmpeg-iOS */; };
+		75F8E00A20ABDA2000917C45 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00320ABDA1F00917C45 /* libavdevice.a */; };
+		75F8E00B20ABDA2000917C45 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00420ABDA1F00917C45 /* libavformat.a */; };
+		75F8E00C20ABDA2000917C45 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00520ABDA1F00917C45 /* libavutil.a */; };
+		75F8E00D20ABDA2000917C45 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00620ABDA2000917C45 /* libswscale.a */; };
+		75F8E00E20ABDA2000917C45 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00720ABDA2000917C45 /* libavfilter.a */; };
+		75F8E00F20ABDA2000917C45 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00820ABDA2000917C45 /* libavcodec.a */; };
+		75F8E01020ABDA2000917C45 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F8E00920ABDA2000917C45 /* libswresample.a */; };
+		75F8E08620AFC9D100917C45 /* UIImageView+Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E08520AFC9D100917C45 /* UIImageView+Bounds.swift */; };
+		75F8E08820AFCE4A00917C45 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E08720AFCE4A00917C45 /* UIImage+CVPixelBuffer.swift */; };
+		75F8E09520B1349300917C45 /* TinyYOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E09420B1349300917C45 /* TinyYOLO.swift */; };
+		75F8E09720B1353A00917C45 /* tinyYolo.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E09620B1353A00917C45 /* tinyYolo.mlmodel */; };
+		75F8E09920B14A0000917C45 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E09820B14A0000917C45 /* SettingTableViewController.swift */; };
+		75F8E09B20B14C6000917C45 /* SettingModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E09A20B14C6000917C45 /* SettingModelTableViewController.swift */; };
+		75F8E09D20B14FA200917C45 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E09C20B14FA200917C45 /* SettingManager.swift */; };
+		75F8E0A620B29F6400917C45 /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8E0A520B29F6400917C45 /* ObjectTableViewCell.swift */; };
+		75F8E0AE20B3C54A00917C45 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F8E0AD20B3C54A00917C45 /* Launch Screen.storyboard */; };
+		75F8E0B220B3D03A00917C45 /* camX.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F8E0B120B3D03900917C45 /* camX.png */; };
+		E2F0704F2850BC17E5E00419 /* Pods_camX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBF9C22369AE3E59859EB5B /* Pods_camX.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75B3813E20B9262D001F3B76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B3816620B929D6001F3B76 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				75B381AF20B9892D001F3B76 /* VarInt.framework in CopyFiles */,
+				75B381B020B9892D001F3B76 /* SwiftBase58.framework in CopyFiles */,
+				75B381B120B9892D001F3B76 /* SwiftMultiaddr.framework in CopyFiles */,
+				75B381B220B9892D001F3B76 /* SwiftIpfsApi.framework in CopyFiles */,
+				75B381B320B9892D001F3B76 /* SwiftMultihash.framework in CopyFiles */,
+				75B381B420B9892D001F3B76 /* SwiftHex.framework in CopyFiles */,
+				75B381B520B9892D001F3B76 /* SwiftGMP.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52B3FD55A59A1694ACF59699 /* Pods-camX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-camX/Pods-camX.debug.xcconfig"; sourceTree = "<group>"; };
+		5FBF9C22369AE3E59859EB5B /* Pods_camX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7567AC9120A3F7F1000882D6 /* camX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7567AC9420A3F7F1000882D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7567AC9B20A3F7F1000882D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7567ACA220A3F7F1000882D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7567ACA920A3F8A9000882D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7567ACBB20A3F94A000882D6 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = ../../../usr/lib/libiconv.dylib; sourceTree = "<group>"; };
+		7567ACBC20A3F94A000882D6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = ../../../usr/lib/libz.dylib; sourceTree = "<group>"; };
+		7567ACBD20A3F94A000882D6 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = ../../../usr/lib/libbz2.dylib; sourceTree = "<group>"; };
+		7567ACC120A3FB1F000882D6 /* camX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "camX-Bridging-Header.h"; sourceTree = "<group>"; };
+		7567ACC420A3FB20000882D6 /* FFmpegVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFmpegVideoPlayer.m; sourceTree = "<group>"; };
+		7567ACC520A3FB21000882D6 /* FFmpegVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFmpegVideoPlayer.h; sourceTree = "<group>"; };
+		7567ACCA20A403E3000882D6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7567ACCB20A403E3000882D6 /* YOLO2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO2.swift; sourceTree = "<group>"; };
+		7567ACCC20A403E3000882D6 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		7567ACCD20A403E3000882D6 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		7567ACCE20A403E3000882D6 /* yolo2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolo2.mlmodel; sourceTree = "<group>"; };
+		756FC6AB20A688F70095BF0C /* MobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
+		756FC6AC20A688F70095BF0C /* CameraTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTableViewController.swift; sourceTree = "<group>"; };
+		756FC6AD20A688F70095BF0C /* ObjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectTableViewController.swift; sourceTree = "<group>"; };
+		756FC6AE20A688F70095BF0C /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		756FC6AF20A688F70095BF0C /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		756FC6B720A689450095BF0C /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		7596C7A320BA72AE000C0115 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		7596C7A520BA739C000C0115 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		7596C7A720BA76F2000C0115 /* AlarmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCollectionViewCell.swift; sourceTree = "<group>"; };
+		7596C7A920BBB06F000C0115 /* IPFSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPFSManager.swift; sourceTree = "<group>"; };
+		7596C7AB20BBC0C4000C0115 /* BlockchainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewController.swift; sourceTree = "<group>"; };
+		7596C7AD20BC93B3000C0115 /* EthereumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumManager.swift; sourceTree = "<group>"; };
+		7596C7B120BCF89D000C0115 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
+		7596C7B320BEF3C9000C0115 /* SettingEthereumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEthereumViewController.swift; sourceTree = "<group>"; };
+		7596C7B520BEF3DD000C0115 /* SettingIPFSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingIPFSViewController.swift; sourceTree = "<group>"; };
+		7596C7B720BF308D000C0115 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7596C7B920BF3EA8000C0115 /* selfie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie.jpg; sourceTree = "<group>"; };
+		75B381A820B9892B001F3B76 /* VarInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VarInt.framework; path = Carthage/Build/iOS/VarInt.framework; sourceTree = "<group>"; };
+		75B381A920B9892C001F3B76 /* SwiftBase58.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftBase58.framework; path = Carthage/Build/iOS/SwiftBase58.framework; sourceTree = "<group>"; };
+		75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMultiaddr.framework; path = Carthage/Build/iOS/SwiftMultiaddr.framework; sourceTree = "<group>"; };
+		75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftIpfsApi.framework; path = Carthage/Build/iOS/SwiftIpfsApi.framework; sourceTree = "<group>"; };
+		75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMultihash.framework; path = Carthage/Build/iOS/SwiftMultihash.framework; sourceTree = "<group>"; };
+		75B381AD20B9892C001F3B76 /* SwiftHex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHex.framework; path = Carthage/Build/iOS/SwiftHex.framework; sourceTree = "<group>"; };
+		75B381AE20B9892C001F3B76 /* SwiftGMP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGMP.framework; path = Carthage/Build/iOS/SwiftGMP.framework; sourceTree = "<group>"; };
+		75B381BD20BA51FE001F3B76 /* onvifCameras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onvifCameras.json; sourceTree = "<group>"; };
+		75B381BE20BA51FE001F3B76 /* ipCameras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ipCameras.json; sourceTree = "<group>"; };
+		75B381C220BA6A01001F3B76 /* AlarmCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCollectionViewController.swift; sourceTree = "<group>"; };
+		75F53C0720B51D0A009012DF /* EditCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCameraViewController.swift; sourceTree = "<group>"; };
+		75F53C0E20B7676D009012DF /* SettingAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAlarmViewController.swift; sourceTree = "<group>"; };
+		75F53C1020B7A9C2009012DF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		75F8DFF220AA784000917C45 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		75F8E00120ABDA0100917C45 /* FFmpeg-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FFmpeg-iOS"; sourceTree = "<group>"; };
+		75F8E00320ABDA1F00917C45 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "camX/FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
+		75F8E00420ABDA1F00917C45 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "camX/FFmpeg-iOS/lib/libavformat.a"; sourceTree = "<group>"; };
+		75F8E00520ABDA1F00917C45 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "camX/FFmpeg-iOS/lib/libavutil.a"; sourceTree = "<group>"; };
+		75F8E00620ABDA2000917C45 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "camX/FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		75F8E00720ABDA2000917C45 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "camX/FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
+		75F8E00820ABDA2000917C45 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "camX/FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
+		75F8E00920ABDA2000917C45 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "camX/FFmpeg-iOS/lib/libswresample.a"; sourceTree = "<group>"; };
+		75F8E08520AFC9D100917C45 /* UIImageView+Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Bounds.swift"; sourceTree = "<group>"; };
+		75F8E08720AFCE4A00917C45 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		75F8E09420B1349300917C45 /* TinyYOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyYOLO.swift; sourceTree = "<group>"; };
+		75F8E09620B1353A00917C45 /* tinyYolo.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = tinyYolo.mlmodel; sourceTree = "<group>"; };
+		75F8E09820B14A0000917C45 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		75F8E09A20B14C6000917C45 /* SettingModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModelTableViewController.swift; sourceTree = "<group>"; };
+		75F8E09C20B14FA200917C45 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		75F8E0A520B29F6400917C45 /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
+		75F8E0AD20B3C54A00917C45 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		75F8E0B120B3D03900917C45 /* camX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camX.png; sourceTree = "<group>"; };
+		91B7B058E0BFBA5516EF4D34 /* Pods-camX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camX.release.xcconfig"; path = "Pods/Target Support Files/Pods-camX/Pods-camX.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7567AC8E20A3F7F1000882D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B381B620B98962001F3B76 /* SwiftBase58.framework in Frameworks */,
+				75B381B720B98962001F3B76 /* SwiftGMP.framework in Frameworks */,
+				75B381B820B98962001F3B76 /* SwiftHex.framework in Frameworks */,
+				75B381B920B98962001F3B76 /* SwiftIpfsApi.framework in Frameworks */,
+				75B381BA20B98962001F3B76 /* SwiftMultiaddr.framework in Frameworks */,
+				75B381BB20B98962001F3B76 /* SwiftMultihash.framework in Frameworks */,
+				75B381BC20B98962001F3B76 /* VarInt.framework in Frameworks */,
+				75F8E00A20ABDA2000917C45 /* libavdevice.a in Frameworks */,
+				75F8E00B20ABDA2000917C45 /* libavformat.a in Frameworks */,
+				75F8E00C20ABDA2000917C45 /* libavutil.a in Frameworks */,
+				75F8E00D20ABDA2000917C45 /* libswscale.a in Frameworks */,
+				75F8E00E20ABDA2000917C45 /* libavfilter.a in Frameworks */,
+				75F8E00F20ABDA2000917C45 /* libavcodec.a in Frameworks */,
+				75F8E01020ABDA2000917C45 /* libswresample.a in Frameworks */,
+				7567ACBE20A3F94A000882D6 /* libiconv.dylib in Frameworks */,
+				7567ACBF20A3F94A000882D6 /* libz.dylib in Frameworks */,
+				7567ACC020A3F94A000882D6 /* libbz2.dylib in Frameworks */,
+				E2F0704F2850BC17E5E00419 /* Pods_camX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7567AC8820A3F7F1000882D6 = {
+			isa = PBXGroup;
+			children = (
+				7567AC9320A3F7F1000882D6 /* camX */,
+				7567AC9220A3F7F1000882D6 /* Products */,
+				7567ACAC20A3F8D1000882D6 /* Frameworks */,
+				D374DD0ECEC13AE1288A985D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7567AC9220A3F7F1000882D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7567AC9120A3F7F1000882D6 /* camX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7567AC9320A3F7F1000882D6 /* camX */ = {
+			isa = PBXGroup;
+			children = (
+				75F8E00120ABDA0100917C45 /* FFmpeg-iOS */,
+				75F8E08420AFC92C00917C45 /* Extensions */,
+				756FC6BD20A6A8CF0095BF0C /* Models */,
+				75F8E0A420B29F2B00917C45 /* Views */,
+				756FC6BE20A6A8E50095BF0C /* Controllers */,
+				756FC6BC20A6A8980095BF0C /* VideoStreamer */,
+				756FC6BB20A6A7C50095BF0C /* ObjectDetection */,
+				75B381C120BA5221001F3B76 /* Resources */,
+				7567AC9420A3F7F1000882D6 /* AppDelegate.swift */,
+				7567ACCA20A403E3000882D6 /* Config.swift */,
+				7567ACC120A3FB1F000882D6 /* camX-Bridging-Header.h */,
+				75F8E0AD20B3C54A00917C45 /* Launch Screen.storyboard */,
+				7567AC9A20A3F7F1000882D6 /* Main.storyboard */,
+				7567ACA220A3F7F1000882D6 /* Info.plist */,
+				7567ACA920A3F8A9000882D6 /* Images.xcassets */,
+			);
+			path = camX;
+			sourceTree = "<group>";
+		};
+		7567ACAC20A3F8D1000882D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F8E00820ABDA2000917C45 /* libavcodec.a */,
+				75F8E00320ABDA1F00917C45 /* libavdevice.a */,
+				75F8E00720ABDA2000917C45 /* libavfilter.a */,
+				75F8E00420ABDA1F00917C45 /* libavformat.a */,
+				75F8E00520ABDA1F00917C45 /* libavutil.a */,
+				75F8E00920ABDA2000917C45 /* libswresample.a */,
+				75F8E00620ABDA2000917C45 /* libswscale.a */,
+				7567ACBB20A3F94A000882D6 /* libiconv.dylib */,
+				7567ACBD20A3F94A000882D6 /* libbz2.dylib */,
+				7567ACBC20A3F94A000882D6 /* libz.dylib */,
+				75B381A920B9892C001F3B76 /* SwiftBase58.framework */,
+				75B381AE20B9892C001F3B76 /* SwiftGMP.framework */,
+				75B381AD20B9892C001F3B76 /* SwiftHex.framework */,
+				75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */,
+				75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */,
+				75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */,
+				75B381A820B9892B001F3B76 /* VarInt.framework */,
+				5FBF9C22369AE3E59859EB5B /* Pods_camX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		756FC6BB20A6A7C50095BF0C /* ObjectDetection */ = {
+			isa = PBXGroup;
+			children = (
+				7567ACCD20A403E3000882D6 /* BoundingBox.swift */,
+				7567ACCC20A403E3000882D6 /* Helpers.swift */,
+				7567ACCB20A403E3000882D6 /* YOLO2.swift */,
+				75F8E09420B1349300917C45 /* TinyYOLO.swift */,
+				7567ACCE20A403E3000882D6 /* yolo2.mlmodel */,
+				75F8E09620B1353A00917C45 /* tinyYolo.mlmodel */,
+			);
+			path = ObjectDetection;
+			sourceTree = "<group>";
+		};
+		756FC6BC20A6A8980095BF0C /* VideoStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				7567ACC520A3FB21000882D6 /* FFmpegVideoPlayer.h */,
+				7567ACC420A3FB20000882D6 /* FFmpegVideoPlayer.m */,
+				756FC6AE20A688F70095BF0C /* VideoCapture.swift */,
+			);
+			path = VideoStreamer;
+			sourceTree = "<group>";
+		};
+		756FC6BD20A6A8CF0095BF0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7596C7A320BA72AE000C0115 /* Alarm.swift */,
+				7596C7A520BA739C000C0115 /* AlarmManager.swift */,
+				756FC6AF20A688F70095BF0C /* Camera.swift */,
+				75F8DFF220AA784000917C45 /* CameraManager.swift */,
+				75F8E09C20B14FA200917C45 /* SettingManager.swift */,
+				7596C7A920BBB06F000C0115 /* IPFSManager.swift */,
+				7596C7AD20BC93B3000C0115 /* EthereumManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		756FC6BE20A6A8E50095BF0C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				756FC6B720A689450095BF0C /* StreamViewController.swift */,
+				756FC6AB20A688F70095BF0C /* MobileViewController.swift */,
+				75F53C0720B51D0A009012DF /* EditCameraViewController.swift */,
+				756FC6AC20A688F70095BF0C /* CameraTableViewController.swift */,
+				756FC6AD20A688F70095BF0C /* ObjectTableViewController.swift */,
+				75B381C220BA6A01001F3B76 /* AlarmCollectionViewController.swift */,
+				7596C7AB20BBC0C4000C0115 /* BlockchainViewController.swift */,
+				75F8E09820B14A0000917C45 /* SettingTableViewController.swift */,
+				75F8E09A20B14C6000917C45 /* SettingModelTableViewController.swift */,
+				75F53C0E20B7676D009012DF /* SettingAlarmViewController.swift */,
+				7596C7B520BEF3DD000C0115 /* SettingIPFSViewController.swift */,
+				7596C7B320BEF3C9000C0115 /* SettingEthereumViewController.swift */,
+				7596C7B720BF308D000C0115 /* AboutViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75B381C120BA5221001F3B76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7596C7B920BF3EA8000C0115 /* selfie.jpg */,
+				75B381BE20BA51FE001F3B76 /* ipCameras.json */,
+				75B381BD20BA51FE001F3B76 /* onvifCameras.json */,
+				75F8E0B120B3D03900917C45 /* camX.png */,
+				75F53C1020B7A9C2009012DF /* logo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		75F8E08420AFC92C00917C45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75F8E08520AFC9D100917C45 /* UIImageView+Bounds.swift */,
+				75F8E08720AFCE4A00917C45 /* UIImage+CVPixelBuffer.swift */,
+				7596C7B120BCF89D000C0115 /* Notification+Name.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75F8E0A420B29F2B00917C45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75F8E0A520B29F6400917C45 /* ObjectTableViewCell.swift */,
+				7596C7A720BA76F2000C0115 /* AlarmCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D374DD0ECEC13AE1288A985D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52B3FD55A59A1694ACF59699 /* Pods-camX.debug.xcconfig */,
+				91B7B058E0BFBA5516EF4D34 /* Pods-camX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7567AC9020A3F7F1000882D6 /* camX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7567ACA520A3F7F1000882D6 /* Build configuration list for PBXNativeTarget "camX" */;
+			buildPhases = (
+				CA358F974F8608F7FE154CAE /* [CP] Check Pods Manifest.lock */,
+				7567AC8D20A3F7F1000882D6 /* Sources */,
+				7567AC8E20A3F7F1000882D6 /* Frameworks */,
+				7567AC8F20A3F7F1000882D6 /* Resources */,
+				75B3813E20B9262D001F3B76 /* Embed Frameworks */,
+				75B3816620B929D6001F3B76 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = camX;
+			productName = camX;
+			productReference = 7567AC9120A3F7F1000882D6 /* camX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7567AC8920A3F7F1000882D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mobile Developer";
+				TargetAttributes = {
+					7567AC9020A3F7F1000882D6 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 7567AC8C20A3F7F1000882D6 /* Build configuration list for PBXProject "camX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7567AC8820A3F7F1000882D6;
+			productRefGroup = 7567AC9220A3F7F1000882D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7567AC9020A3F7F1000882D6 /* camX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7567AC8F20A3F7F1000882D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F8E00220ABDA0200917C45 /* FFmpeg-iOS in Resources */,
+				7567ACAB20A3F8A9000882D6 /* Images.xcassets in Resources */,
+				75F8E0B220B3D03A00917C45 /* camX.png in Resources */,
+				75B381C020BA51FF001F3B76 /* ipCameras.json in Resources */,
+				75F53C1120B7A9C2009012DF /* logo.png in Resources */,
+				75F8E0AE20B3C54A00917C45 /* Launch Screen.storyboard in Resources */,
+				7567AC9C20A3F7F1000882D6 /* Main.storyboard in Resources */,
+				75B381BF20BA51FF001F3B76 /* onvifCameras.json in Resources */,
+				7596C7BA20BF3EA9000C0115 /* selfie.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA358F974F8608F7FE154CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-camX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7567AC8D20A3F7F1000882D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756FC6B520A688F70095BF0C /* Camera.swift in Sources */,
+				756FC6B420A688F70095BF0C /* VideoCapture.swift in Sources */,
+				7567ACC720A3FB21000882D6 /* FFmpegVideoPlayer.m in Sources */,
+				7596C7B820BF308D000C0115 /* AboutViewController.swift in Sources */,
+				7596C7B620BEF3DD000C0115 /* SettingIPFSViewController.swift in Sources */,
+				7596C7AA20BBB06F000C0115 /* IPFSManager.swift in Sources */,
+				75F8E09920B14A0000917C45 /* SettingTableViewController.swift in Sources */,
+				7596C7B420BEF3C9000C0115 /* SettingEthereumViewController.swift in Sources */,
+				7596C7B220BCF89D000C0115 /* Notification+Name.swift in Sources */,
+				7567ACD220A403E3000882D6 /* BoundingBox.swift in Sources */,
+				7567ACD120A403E3000882D6 /* Helpers.swift in Sources */,
+				75B381C320BA6A01001F3B76 /* AlarmCollectionViewController.swift in Sources */,
+				7567ACD320A403E3000882D6 /* yolo2.mlmodel in Sources */,
+				75F8E09520B1349300917C45 /* TinyYOLO.swift in Sources */,
+				7596C7AE20BC93B3000C0115 /* EthereumManager.swift in Sources */,
+				75F53C0F20B7676D009012DF /* SettingAlarmViewController.swift in Sources */,
+				7596C7AC20BBC0C4000C0115 /* BlockchainViewController.swift in Sources */,
+				7596C7A820BA76F2000C0115 /* AlarmCollectionViewCell.swift in Sources */,
+				75F8E09720B1353A00917C45 /* tinyYolo.mlmodel in Sources */,
+				7596C7A420BA72AE000C0115 /* Alarm.swift in Sources */,
+				7567AC9520A3F7F1000882D6 /* AppDelegate.swift in Sources */,
+				75F8E08820AFCE4A00917C45 /* UIImage+CVPixelBuffer.swift in Sources */,
+				756FC6B120A688F70095BF0C /* MobileViewController.swift in Sources */,
+				756FC6B220A688F70095BF0C /* CameraTableViewController.swift in Sources */,
+				75F8E0A620B29F6400917C45 /* ObjectTableViewCell.swift in Sources */,
+				756FC6B820A689450095BF0C /* StreamViewController.swift in Sources */,
+				756FC6B320A688F70095BF0C /* ObjectTableViewController.swift in Sources */,
+				7567ACD020A403E3000882D6 /* YOLO2.swift in Sources */,
+				7596C7A620BA739C000C0115 /* AlarmManager.swift in Sources */,
+				7567ACCF20A403E3000882D6 /* Config.swift in Sources */,
+				75F8E09B20B14C6000917C45 /* SettingModelTableViewController.swift in Sources */,
+				75F8E08620AFC9D100917C45 /* UIImageView+Bounds.swift in Sources */,
+				75F8E09D20B14FA200917C45 /* SettingManager.swift in Sources */,
+				75F53C0820B51D0A009012DF /* EditCameraViewController.swift in Sources */,
+				75F8DFF320AA784000917C45 /* CameraManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7567AC9A20A3F7F1000882D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7567AC9B20A3F7F1000882D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7567ACA320A3F7F1000882D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7567ACA420A3F7F1000882D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7567ACA620A3F7F1000882D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B3FD55A59A1694ACF59699 /* Pods-camX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49Q4D2SN42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX/FFmpeg-iOS/include/**",
+				);
+				INFOPLIST_FILE = camX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onvif.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "camX/camX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7567ACA720A3F7F1000882D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B7B058E0BFBA5516EF4D34 /* Pods-camX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49Q4D2SN42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX/FFmpeg-iOS/include/**",
+				);
+				INFOPLIST_FILE = camX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/camX/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onvif.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "camX/camX-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7567AC8C20A3F7F1000882D6 /* Build configuration list for PBXProject "camX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7567ACA320A3F7F1000882D6 /* Debug */,
+				7567ACA420A3F7F1000882D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7567ACA520A3F7F1000882D6 /* Build configuration list for PBXNativeTarget "camX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7567ACA620A3F7F1000882D6 /* Debug */,
+				7567ACA720A3F7F1000882D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7567AC8920A3F7F1000882D6 /* Project object */;
+}
