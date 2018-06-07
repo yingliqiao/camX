@@ -21,7 +21,7 @@ cam X uses FFmpeg library to decode and stream live video from cameras use ONVIF
 ## User Guide
 
 See [cam X](https://onvif-spotlight.bemyapp.com/#/projects/5b059d5d1b428b000497e09d) page for detailed slides and screenshots.
-Alternatively, I made demo videos on [network cameras](https://youtu.be/2qVB5_j4TOg) and [iPad Pro backward facing camera](https://youtu.be/FVj4Qnxq4k8)
+Alternatively, I made demo videos on [network cameras](https://youtu.be/DV081JC3cjY) and [iPad Pro backward facing camera](https://youtu.be/I_9fAaTosmg)
 
 ## Screenshots
 ![Video](https://res.cloudinary.com/ideation/image/upload/w_1920,h_1124,dpr_1/z1xrhdjenoyht5locyf8.png)
