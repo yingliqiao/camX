@@ -6,6 +6,8 @@ It's a proof of concept project to demonstrate how Deep Learning, IPFS and Block
 
 cam X uses FFmpeg library to decode and stream live video from cameras use ONVIF protocol, HTTP, RTSP or iOS device build-in cameras. It equips with Tiny Yolo and Yolo 2 deep learning object detection models as video analytics engine on camera. Users are given options to pick any object class to detect or raise alarm. Users manually pick alarm to save to IPFS. iOS device UUID used as key to store alarm hash to Ethereum Rinkeby Test Network via a simple lookup smart contract.
 
+I posted an article on Medium to explain the project in details [Deep Learning + IPFS + Ethereum Blockchain in practice](https://medium.com/coinmonks/deep-learning-ipfs-ethereum-blockchain-in-practice-7ef6665330dd)
+
 ## Installation
 
 1. Run [FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script) to build FFmpeg library for iOS
