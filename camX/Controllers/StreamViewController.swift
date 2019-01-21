@@ -349,7 +349,7 @@ import VideoToolbox
         containerView.contentMode = .scaleAspectFit
         containerView.image = uiImage
         self.frameView.addSubview(containerView)
-        self.frameView.sendSubview(toBack: containerView)
+        self.frameView.sendSubviewToBack(containerView)
         
         let scale = UIScreen.main.scale
         

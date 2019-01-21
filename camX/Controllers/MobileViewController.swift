@@ -239,7 +239,7 @@ class MobileViewController: UIViewController, UIGestureRecognizerDelegate {
         let containerView = UIImageView(frame: self.view.bounds)
         containerView.image = uiImage
         self.videoPreview.addSubview(containerView)
-        self.videoPreview.sendSubview(toBack: containerView)
+        self.videoPreview.sendSubviewToBack(containerView)
         
         let scale = UIScreen.main.scale
         

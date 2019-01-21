@@ -25,7 +25,7 @@ class IPFSManager {
     func saveAlarmImage(_ alarm: Alarm) {
         do {
             let api = try IpfsApi(host: IPFSManager.host, port: IPFSManager.port, version: IPFSManager.version, ssl: IPFSManager.ssl)
-            let imageData = UIImagePNGRepresentation(alarm.image!)
+            let imageData = alarm.image!.pngData()
             try api.add(imageData!) {
                 result in
                 alarm.imageHash = b58String(result[0].hash!)
