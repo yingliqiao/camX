@@ -78,7 +78,7 @@ import VideoToolbox
             onvifCamera = ONVIFCamera(with: camera.ip,
                                       credential: (login: camera.user, password: camera.password),
                                       soapLicenseKey: Config.soapLicenseKey)
-            onvifCamera.getServices {
+            onvifCamera.getServices {_ in 
                 self.getDeviceInformation()
             }
         } else {
@@ -134,8 +134,8 @@ import VideoToolbox
     private func updateProfiles() {
         if onvifCamera.state == .Connected {
             onvifCamera.getProfiles(profiles: { (profiles) -> () in
-                if profiles.count > 0 {
-                    self.onvifCamera.getStreamURI(with: profiles.first!.token, uri: { (uri) in
+                if profiles!.count > 0 {
+                    self.onvifCamera.getStreamURI(with: profiles!.first!.token, uri: { (uri) in
                         self.playVideo(uri: self.onvifCamera.streamURI!)
                     })
                 }

@@ -46,67 +46,51 @@ class EthereumManager {
     let keystoreManager: KeystoreManager
     let keystore: EthereumKeystoreV3
     
-    let web3Rinkeby = Web3.InfuraRinkebyWeb3(accessToken: EthereumManager.accessToken)
-    let contractAddress = EthereumAddress(EthereumManager.smartContractAddress)
-    let walletAddress = EthereumAddress(EthereumManager.walletAddress)
+    let web3Rinkeby = Web3(infura: .rinkeby, accessToken: EthereumManager.accessToken)
+    let contractAddress = Address(EthereumManager.smartContractAddress)
+    let walletAddress = Address(EthereumManager.walletAddress)
     
-    var options = Web3Options.defaultOptions()
+    var options = Web3Options.default;
     
     static let sharedInstance = EthereumManager()
     
     init() {
         keystoreManager = KeystoreManager.managerForPath(userDir + "/keystore")!
-        keystore = keystoreManager.walletForAddress((keystoreManager.addresses![0])) as! EthereumKeystoreV3
+        keystore = keystoreManager.walletForAddress((keystoreManager.addresses[0])) as! EthereumKeystoreV3
         web3Rinkeby.addKeystoreManager(keystoreManager)
         
         options.gasLimit = BigUInt(100000)
         options.value = BigUInt(0)
-        options.from = keystore.addresses?.first!
+        options.from = keystore.addresses.first!
     }
     
     func getWalletBalance() -> String {
-        let response = web3Rinkeby.eth.getBalance(address: walletAddress)
-        switch response {
-            case .failure(_):
-                print("ETHEREUM - failed to get wallet balance")
-                return ""
-            case .success(let result):
-                let balance = result
-                let formattedBalance = Web3.Utils.formatToEthereumUnits(balance, toUnits: .eth, decimals: 9)
-                print(String(format: "ETHEREUM - wallet balance:%@ ETH", formattedBalance!))
-                return String(format: "%@ ETH", formattedBalance!)
-        }
+        guard let balance = try? web3Rinkeby.eth.getBalance(address: walletAddress) else { return "UNKNOWN ETH" }
+        let formattedBalance = balance.string(unitDecimals: 18, decimals: 9, decimalSeparator: ",")
+        print(String(format: "ETHEREUM - wallet balance:%@ ETH", formattedBalance))
+        return String(format: "%@ ETH", formattedBalance)
     }
     
     func getGasPrice() -> String {
-        let response = web3Rinkeby.eth.getGasPrice()
-        switch response {
-            case .failure(_):
-                print("ETHEREUM - failed to get gas price")
-                return ""
-            case .success(let result):
-                let price = result
-                let formattedPrice = Web3.Utils.formatToEthereumUnits(price, toUnits: .eth, decimals: 9)
-                print(String(format: "ETHEREUM - gas price:%@ ETH", formattedPrice!))
-                return String(format: "%@ ETH", formattedPrice!)
-        }
+        guard let price = try? web3Rinkeby.eth.getGasPrice() else { return "UNKNOWN ETH" }
+        let formattedPrice = price.string(unitDecimals: 18, decimals: 9, decimalSeparator: ",")
+        print(String(format: "ETHEREUM - gas price:%@ ETH", formattedPrice))
+        return String(format: "%@ ETH", formattedPrice)
     }
     
     func addHash(hash: String) -> String {
         // Key, Hash
         let parameters = [SettingManager.sharedInstance.uuID, hash] as [AnyObject]
-        let intermediateSend = web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress, abiVersion: 2)!.method("addHash", parameters:parameters, options: options)!
-        let response = intermediateSend.send(password: EthereumManager.rinkebyPassword)
-        guard case .success(let sendResult) = response else { return "" }
-        return sendResult["txhash"]!
+        guard let intermediateSend = try? web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress).method("addHash", parameters:parameters, options: options) else { return "UNKNOWN HASH" }
+        guard let response = try? intermediateSend.send(password: EthereumManager.rinkebyPassword) else { return "UNKNOWN HASH" }
+        return response.hash
     }
     
     func getHash() -> String {
         // Key
         let parameters = [SettingManager.sharedInstance.uuID] as [AnyObject]
-        let intermediateCall = web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress, abiVersion: 2)!.method("getHash", parameters: parameters, options: options)!
-        let response = intermediateCall.call(options: options)
-        guard case .success(let callResult) = response else { return ""}
-        return callResult["0"] as! String
+        guard let intermediateCall = try? web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress).method("getHash", parameters: parameters, options: options) else { return "UNKNOWN HASH" }
+        guard let response = try? intermediateCall.call(options: options) else { return "UNKNOWN HASH" }
+        return response["0"] as! String
     }
 }

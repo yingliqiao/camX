@@ -7,5 +7,4 @@ target 'camX' do
 
   # Pods for camX
   pod 'ONVIFCamera'
-  pod 'web3swift'
 end
