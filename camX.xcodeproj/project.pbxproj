@@ -36,23 +36,23 @@
 		7596C7B620BEF3DD000C0115 /* SettingIPFSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B520BEF3DD000C0115 /* SettingIPFSViewController.swift */; };
 		7596C7B820BF308D000C0115 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596C7B720BF308D000C0115 /* AboutViewController.swift */; };
 		7596C7BA20BF3EA9000C0115 /* selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7596C7B920BF3EA8000C0115 /* selfie.jpg */; };
-		75B381AF20B9892D001F3B76 /* VarInt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381A820B9892B001F3B76 /* VarInt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B020B9892D001F3B76 /* SwiftBase58.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381A920B9892C001F3B76 /* SwiftBase58.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B120B9892D001F3B76 /* SwiftMultiaddr.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B220B9892D001F3B76 /* SwiftIpfsApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B320B9892D001F3B76 /* SwiftMultihash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B420B9892D001F3B76 /* SwiftHex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AD20B9892C001F3B76 /* SwiftHex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B520B9892D001F3B76 /* SwiftGMP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B381AE20B9892C001F3B76 /* SwiftGMP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B381B620B98962001F3B76 /* SwiftBase58.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A920B9892C001F3B76 /* SwiftBase58.framework */; };
-		75B381B720B98962001F3B76 /* SwiftGMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AE20B9892C001F3B76 /* SwiftGMP.framework */; };
-		75B381B820B98962001F3B76 /* SwiftHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AD20B9892C001F3B76 /* SwiftHex.framework */; };
-		75B381B920B98962001F3B76 /* SwiftIpfsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */; };
-		75B381BA20B98962001F3B76 /* SwiftMultiaddr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */; };
-		75B381BB20B98962001F3B76 /* SwiftMultihash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */; };
-		75B381BC20B98962001F3B76 /* VarInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A820B9892B001F3B76 /* VarInt.framework */; };
 		75B381BF20BA51FF001F3B76 /* onvifCameras.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B381BD20BA51FE001F3B76 /* onvifCameras.json */; };
 		75B381C020BA51FF001F3B76 /* ipCameras.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B381BE20BA51FE001F3B76 /* ipCameras.json */; };
 		75B381C320BA6A01001F3B76 /* AlarmCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B381C220BA6A01001F3B76 /* AlarmCollectionViewController.swift */; };
+		75DD109A21F6BB5E00C8F77A /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FDBA821F649C70050B7C9 /* BigInt.framework */; };
+		75DD109B21F6BB5E00C8F77A /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FDBBE21F653250050B7C9 /* PromiseKit.framework */; };
+		75DD109C21F6BB5E00C8F77A /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FDBAF21F64A9A0050B7C9 /* SipHash.framework */; };
+		75DD109D21F6BB5E00C8F77A /* SwiftIpfsApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AB20B9892C001F3B76 /* SwiftIpfsApi.framework */; };
+		75DD109E21F6BB5E00C8F77A /* SwiftHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AD20B9892C001F3B76 /* SwiftHex.framework */; };
+		75DD109F21F6BB5E00C8F77A /* SwiftGMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AE20B9892C001F3B76 /* SwiftGMP.framework */; };
+		75DD10A021F6BB5E00C8F77A /* SwiftBase58.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A920B9892C001F3B76 /* SwiftBase58.framework */; };
+		75DD10A121F6BB5E00C8F77A /* SwiftMultiaddr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */; };
+		75DD10A221F6BB5E00C8F77A /* SwiftMultihash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381AC20B9892C001F3B76 /* SwiftMultihash.framework */; };
+		75DD10A321F6BB5E00C8F77A /* VarInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B381A820B9892B001F3B76 /* VarInt.framework */; };
+		75DD10A421F6BB5E00C8F77A /* web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FDBBB21F652D40050B7C9 /* web3swift.framework */; };
+		75DD10A821F6BB5E00C8F77A /* keccak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD10A521F6BB5E00C8F77A /* keccak.framework */; };
+		75DD10A921F6BB5E00C8F77A /* scrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD10A621F6BB5E00C8F77A /* scrypt.framework */; };
+		75DD10AA21F6BB5E00C8F77A /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD10A721F6BB5E00C8F77A /* secp256k1.framework */; };
 		75F53C0820B51D0A009012DF /* EditCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F53C0720B51D0A009012DF /* EditCameraViewController.swift */; };
 		75F53C0F20B7676D009012DF /* SettingAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F53C0E20B7676D009012DF /* SettingAlarmViewController.swift */; };
 		75F53C1120B7A9C2009012DF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F53C1020B7A9C2009012DF /* logo.png */; };
@@ -79,29 +79,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		75B3813E20B9262D001F3B76 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75B3816620B929D6001F3B76 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				75B381AF20B9892D001F3B76 /* VarInt.framework in CopyFiles */,
-				75B381B020B9892D001F3B76 /* SwiftBase58.framework in CopyFiles */,
-				75B381B120B9892D001F3B76 /* SwiftMultiaddr.framework in CopyFiles */,
-				75B381B220B9892D001F3B76 /* SwiftIpfsApi.framework in CopyFiles */,
-				75B381B320B9892D001F3B76 /* SwiftMultihash.framework in CopyFiles */,
-				75B381B420B9892D001F3B76 /* SwiftHex.framework in CopyFiles */,
-				75B381B520B9892D001F3B76 /* SwiftGMP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +126,10 @@
 		7596C7B520BEF3DD000C0115 /* SettingIPFSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingIPFSViewController.swift; sourceTree = "<group>"; };
 		7596C7B720BF308D000C0115 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		7596C7B920BF3EA8000C0115 /* selfie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie.jpg; sourceTree = "<group>"; };
+		759FDBA821F649C70050B7C9 /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BigInt.framework; path = Carthage/Build/iOS/BigInt.framework; sourceTree = "<group>"; };
+		759FDBAF21F64A9A0050B7C9 /* SipHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SipHash.framework; path = Carthage/Build/iOS/SipHash.framework; sourceTree = "<group>"; };
+		759FDBBB21F652D40050B7C9 /* web3swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = web3swift.framework; path = Carthage/Build/iOS/web3swift.framework; sourceTree = "<group>"; };
+		759FDBBE21F653250050B7C9 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		75B381A820B9892B001F3B76 /* VarInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VarInt.framework; path = Carthage/Build/iOS/VarInt.framework; sourceTree = "<group>"; };
 		75B381A920B9892C001F3B76 /* SwiftBase58.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftBase58.framework; path = Carthage/Build/iOS/SwiftBase58.framework; sourceTree = "<group>"; };
 		75B381AA20B9892C001F3B76 /* SwiftMultiaddr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMultiaddr.framework; path = Carthage/Build/iOS/SwiftMultiaddr.framework; sourceTree = "<group>"; };
@@ -153,6 +140,9 @@
 		75B381BD20BA51FE001F3B76 /* onvifCameras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onvifCameras.json; sourceTree = "<group>"; };
 		75B381BE20BA51FE001F3B76 /* ipCameras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ipCameras.json; sourceTree = "<group>"; };
 		75B381C220BA6A01001F3B76 /* AlarmCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCollectionViewController.swift; sourceTree = "<group>"; };
+		75DD10A521F6BB5E00C8F77A /* keccak.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = keccak.framework; path = Carthage/Build/iOS/keccak.framework; sourceTree = "<group>"; };
+		75DD10A621F6BB5E00C8F77A /* scrypt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = scrypt.framework; path = Carthage/Build/iOS/scrypt.framework; sourceTree = "<group>"; };
+		75DD10A721F6BB5E00C8F77A /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
 		75F53C0720B51D0A009012DF /* EditCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCameraViewController.swift; sourceTree = "<group>"; };
 		75F53C0E20B7676D009012DF /* SettingAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAlarmViewController.swift; sourceTree = "<group>"; };
 		75F53C1020B7A9C2009012DF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -183,13 +173,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B381B620B98962001F3B76 /* SwiftBase58.framework in Frameworks */,
-				75B381B720B98962001F3B76 /* SwiftGMP.framework in Frameworks */,
-				75B381B820B98962001F3B76 /* SwiftHex.framework in Frameworks */,
-				75B381B920B98962001F3B76 /* SwiftIpfsApi.framework in Frameworks */,
-				75B381BA20B98962001F3B76 /* SwiftMultiaddr.framework in Frameworks */,
-				75B381BB20B98962001F3B76 /* SwiftMultihash.framework in Frameworks */,
-				75B381BC20B98962001F3B76 /* VarInt.framework in Frameworks */,
+				75DD10A821F6BB5E00C8F77A /* keccak.framework in Frameworks */,
+				75DD10A921F6BB5E00C8F77A /* scrypt.framework in Frameworks */,
+				75DD10AA21F6BB5E00C8F77A /* secp256k1.framework in Frameworks */,
+				75DD109A21F6BB5E00C8F77A /* BigInt.framework in Frameworks */,
+				75DD109B21F6BB5E00C8F77A /* PromiseKit.framework in Frameworks */,
+				75DD109C21F6BB5E00C8F77A /* SipHash.framework in Frameworks */,
+				75DD109D21F6BB5E00C8F77A /* SwiftIpfsApi.framework in Frameworks */,
+				75DD109E21F6BB5E00C8F77A /* SwiftHex.framework in Frameworks */,
+				75DD109F21F6BB5E00C8F77A /* SwiftGMP.framework in Frameworks */,
+				75DD10A021F6BB5E00C8F77A /* SwiftBase58.framework in Frameworks */,
+				75DD10A121F6BB5E00C8F77A /* SwiftMultiaddr.framework in Frameworks */,
+				75DD10A221F6BB5E00C8F77A /* SwiftMultihash.framework in Frameworks */,
+				75DD10A321F6BB5E00C8F77A /* VarInt.framework in Frameworks */,
+				75DD10A421F6BB5E00C8F77A /* web3swift.framework in Frameworks */,
 				75F8E00A20ABDA2000917C45 /* libavdevice.a in Frameworks */,
 				75F8E00B20ABDA2000917C45 /* libavformat.a in Frameworks */,
 				75F8E00C20ABDA2000917C45 /* libavutil.a in Frameworks */,
@@ -250,6 +247,9 @@
 		7567ACAC20A3F8D1000882D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75DD10A521F6BB5E00C8F77A /* keccak.framework */,
+				75DD10A621F6BB5E00C8F77A /* scrypt.framework */,
+				75DD10A721F6BB5E00C8F77A /* secp256k1.framework */,
 				75F8E00820ABDA2000917C45 /* libavcodec.a */,
 				75F8E00320ABDA1F00917C45 /* libavdevice.a */,
 				75F8E00720ABDA2000917C45 /* libavfilter.a */,
@@ -260,6 +260,10 @@
 				7567ACBB20A3F94A000882D6 /* libiconv.dylib */,
 				7567ACBD20A3F94A000882D6 /* libbz2.dylib */,
 				7567ACBC20A3F94A000882D6 /* libz.dylib */,
+				759FDBAF21F64A9A0050B7C9 /* SipHash.framework */,
+				759FDBA821F649C70050B7C9 /* BigInt.framework */,
+				759FDBBE21F653250050B7C9 /* PromiseKit.framework */,
+				759FDBBB21F652D40050B7C9 /* web3swift.framework */,
 				75B381A920B9892C001F3B76 /* SwiftBase58.framework */,
 				75B381AE20B9892C001F3B76 /* SwiftGMP.framework */,
 				75B381AD20B9892C001F3B76 /* SwiftHex.framework */,
@@ -380,9 +384,9 @@
 				7567AC8D20A3F7F1000882D6 /* Sources */,
 				7567AC8E20A3F7F1000882D6 /* Frameworks */,
 				7567AC8F20A3F7F1000882D6 /* Resources */,
-				75B3813E20B9262D001F3B76 /* Embed Frameworks */,
 				75B3816620B929D6001F3B76 /* CopyFiles */,
 				E1CF86D114F36B89485F33E8 /* [CP] Embed Pods Frameworks */,
+				759FDBCE21F6B7EC0050B7C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -447,6 +451,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		759FDBCE21F6B7EC0050B7C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SipHash.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BigInt.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/web3swift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftBase58.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftGMP.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftHex.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftIpfsApi.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftMultiaddr.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftMultihash.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/VarInt.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/keccak.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/scrypt.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/secp256k1.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SipHash.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/BigInt.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/web3swift.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftBase58.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftGMP.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftHex.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftIpfsApi.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftMultiaddr.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/SwiftMultihash.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/VarInt.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/keccak.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/scrypt.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/secp256k1.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		CA358F974F8608F7FE154CAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,7 +713,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49Q4D2SN42;
+				DEVELOPMENT_TEAM = L2AF5KTHB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/camX",
@@ -684,7 +733,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/camX/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.onvif.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onvif.camx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "camX/camX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -701,7 +750,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49Q4D2SN42;
+				DEVELOPMENT_TEAM = L2AF5KTHB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/camX",
@@ -721,7 +770,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/camX/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.onvif.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onvif.camx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "camX/camX-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
