@@ -10,11 +10,11 @@ I posted an article on Medium to explain the project in details [Deep Learning +
 
 ## Installation
 
-1. Run [FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script) to build FFmpeg library for iOS
+1. Run [FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script) to build FFmpeg library for iOS.
 
-2. Run 'pod update' in root directory to install [ONVIFCamera](https://github.com/rvi/ONVIFCamera) library and [web3swift](https://github.com/BANKEX/web3swift) library.
+2. Run 'pod update' in root directory to install [ONVIFCamera](https://github.com/rvi/ONVIFCamera) library.
 
-3. Install Carthage and run 'carthage update --platform iOS' to install [swift-ipfs-api](https://github.com/ipfs/swift-ipfs-api)
+3. Install Carthage and run 'carthage update --platform iOS' to install [web3swift](https://github.com/BANKEX/web3swift) library and [swift-ipfs-api](https://github.com/ipfs/swift-ipfs-api) library.
 
 4. Run download.sh shell script to download pre-trained CoreML models: Tiny Yolo and Yolo 2.
 
