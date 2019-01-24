@@ -92,7 +92,7 @@ class BlockchainViewController: UIViewController {
     }
     
     @objc func ipfsAlarmsUpdated() {
-        alarm.txHash = EthereumManager.sharedInstance.addHash(hash: AlarmManager.sharedInstance.alarmsHash)
+        alarm.txHash = EthereumManager.sharedInstance.saveHash(hash: AlarmManager.sharedInstance.alarmsHash)
         DispatchQueue.main.async {
             self.updateUI()
             

@@ -34,13 +34,13 @@ class EthereumManager {
     static let rinkebyPassword = "onvif0603"
     
     // Rinkeby Test Network - smart contract address
-    static let smartContractAddress = "0xC83Be6EaB676e9dA7845a08B006A8f9d3f8A534D"
+    static let smartContractAddress = "0x8Ed602A002D4A9dB12567F225c2c5ae6fB5551E4"
     
     // Rinkeby Test Network - smart contract web address
     static let smartContractURL = String(format:"%@%@", rinkebyAddress, smartContractAddress)
     
     // Rinkeby Test Network = smart contract application binary interface
-    static let ipfsContractABI = "[{\"constant\":true,\"inputs\":[{\"name\":\"key\",\"type\":\"string\"}],\"name\":\"getHash\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"key\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}],\"name\":\"addHash\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]"
+    static let ipfsContractABI = "[{\"constant\": false,\"inputs\": [{\"name\": \"_udid\",\"type\": \"string\"},{\"name\": \"_value\",\"type\": \"string\"}],\"name\": \"saveHash\",\"outputs\": [],\"payable\": true,\"stateMutability\": \"payable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [],\"name\": \"toggleContractActive\",\"outputs\": [],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [{\"name\": \"_newOwner\",\"type\": \"address\"}],\"name\": \"transferOwner\",\"outputs\": [],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [{\"name\": \"_amount\",\"type\": \"uint256\"}],\"name\": \"withdraw\",\"outputs\": [],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"inputs\": [],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"constructor\"},{\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"fallback\"},{\"anonymous\": false,\"inputs\": [{\"indexed\": false,\"name\": \"_owner\",\"type\": \"address\"},{\"indexed\": false,\"name\": \"_newOwner\",\"type\": \"address\"}],\"name\": \"LogTransferOwner\",\"type\": \"event\"},{\"anonymous\": false,\"inputs\": [{\"indexed\": false,\"name\": \"_owner\",\"type\": \"address\"},{\"indexed\": false,\"name\": \"_amount\",\"type\": \"uint256\"}],\"name\": \"LogWithdraw\",\"type\": \"event\"},{\"anonymous\": false,\"inputs\": [{\"indexed\": false,\"name\": \"_sender\",\"type\": \"address\"},{\"indexed\": false,\"name\": \"_value\",\"type\": \"string\"}],\"name\": \"LogSaveHash\",\"type\": \"event\"},{\"constant\": true,\"inputs\": [],\"name\": \"fee\",\"outputs\": [{\"name\": \"\",\"type\": \"uint256\"}],\"payable\": false,\"stateMutability\": \"view\",\"type\": \"function\"},{\"constant\": true,\"inputs\": [{\"name\": \"_udid\",\"type\": \"string\"}],\"name\": \"getHash\",\"outputs\": [{\"name\": \"_sender\",\"type\": \"address\"},{\"name\": \"_value\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"view\",\"type\": \"function\"},{\"constant\": true,\"inputs\": [],\"name\": \"getOwner\",\"outputs\": [{\"name\": \"_owner\",\"type\": \"address\"}],\"payable\": false,\"stateMutability\": \"view\",\"type\": \"function\"}]"
     
     let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
     let keystoreManager: KeystoreManager
@@ -78,10 +78,11 @@ class EthereumManager {
         return String(format: "%@ ETH", formattedPrice)
     }
     
-    func addHash(hash: String) -> String {
+    func saveHash(hash: String) -> String {
         // Key, Hash
+        options.value = BigUInt(1000000000000000);
         let parameters = [SettingManager.sharedInstance.uuID, hash] as [AnyObject]
-        guard let intermediateSend = try? web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress).method("addHash", parameters:parameters, options: options) else { return "UNKNOWN HASH" }
+        guard let intermediateSend = try? web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress).method("saveHash", parameters:parameters, options: options) else { return "UNKNOWN HASH" }
         guard let response = try? intermediateSend.send(password: EthereumManager.rinkebyPassword) else { return "UNKNOWN HASH" }
         return response.hash
     }
@@ -91,6 +92,6 @@ class EthereumManager {
         let parameters = [SettingManager.sharedInstance.uuID] as [AnyObject]
         guard let intermediateCall = try? web3Rinkeby.contract(EthereumManager.ipfsContractABI, at: contractAddress).method("getHash", parameters: parameters, options: options) else { return "UNKNOWN HASH" }
         guard let response = try? intermediateCall.call(options: options) else { return "UNKNOWN HASH" }
-        return response["0"] as! String
+        return response["1"] as! String
     }
 }
